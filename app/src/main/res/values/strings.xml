@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Meeting</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="username_hint_registration">Username</string>
+    <string name="email_hint_registration">Email</string>
+    <string name="password_hint_registration">Password</string>
+    <string name="register_button">Register</string>
+    <string name="already_account_link"><u>Already have an account? Login!</u></string>
+    <string name="login_button">Login</string>
+    <string name="back_registration"><u>Back to registration</u></string>
+    <string name="select_photo_button">Select Photo</string>
+    <string name="username_text_profile">Username</string>
+    <string name="update_button">Update</string>
+    <string name="title_activity_homepage">MainActivity</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="edit_profile_button">Edit Profile</string>
+    <string name="bio_textView_profile_fragment">Bio</string>
+    <string name="remember_me">Remember me?</string>
+    <string name="bio_hint_editprofile">Ex. Full Name, Age, City, etc.</string>
+    <string name="logout_button">Logout</string>
+    <string name="search_hint_edittext">Search event…</string>
+    <string name="create_event_button">Create Event</string>
+    <string name="event_title_hint_edittext">Event Title…</string>
+    <string name="description_event_hint_edittext">Description…</string>
+    <string name="tags_hint_edittext">Tags: ex. #sport, #videogames, #comics etc.</string>
+    <string name="address_hint_edittext">Address…</string>
+    <string name="date_hint_edittext">DD/MM/YY</string>
+    <string name="time_hint_button">HH:MM</string>
+    <string name="create_a_new_event_button">Create a new Event</string>
+    <string name="selectphoto_textview_create_event">Select a photo that represent your event…</string>
+    <string name="select_tag">Select a Category for your event…</string>
+    <string name="participant_textview_eventactivity">Participants:</string>
+    <string name="participate_button_event_activity">Participate</string>
+    <string name="dont_participate_button_event_activity">Dont Participate anymore</string>
+    <string name="delete_event_button_event_activity">Delete Event</string>
+    <string name="tag_sport">Sport</string>
+    <string name="tag_party">Party</string>
+    <string name="tag_food">Food</string>
+    <string name="tag_comics">Comics</string>
+    <string name="tag_games">Games</string>
+    <string name="tag_business">Business</string>
+
+    <string-array name="tag_list">
+        <item>@string/tag_sport</item>
+        <item>@string/tag_party</item>
+        <item>@string/tag_food</item>
+        <item>@string/tag_comics</item>
+        <item>@string/tag_games</item>
+        <item>@string/tag_business</item>
+    </string-array>
+</resources>

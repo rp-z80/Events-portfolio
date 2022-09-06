@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    tools:context=".ExploreFragment">
+
+    <SearchView
+        android:id="@+id/searchViewExploreFragment"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="@string/search_hint_edittext"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_basketball_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_sport"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/searchViewExploreFragment"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewExploreFragment" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_party"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_cake_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_party"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button_tag_business"
+        app:layout_constraintEnd_toStartOf="@+id/button_tag_business"
+        app:layout_constraintStart_toEndOf="@+id/button_tag_comics" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_food_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_food"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/button_tag_games"
+        app:layout_constraintStart_toEndOf="@+id/button_tag_sport"
+        app:layout_constraintTop_toTopOf="@+id/button_tag_sport" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_comics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_book_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_comics"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button_tag_party"
+        app:layout_constraintStart_toStartOf="@+id/button_tag_sport" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_esports_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_games"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/searchViewExploreFragment"
+        app:layout_constraintTop_toTopOf="@+id/button_tag_food" />
+
+    <android.widget.Button
+        android:id="@+id/button_tag_business"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="6dp"
+        android:drawableTop="@drawable/ic_business_24"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/tag_business"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button_tag_games"
+        app:layout_constraintTop_toBottomOf="@+id/button_tag_games" />
+</androidx.constraintlayout.widget.ConstraintLayout>

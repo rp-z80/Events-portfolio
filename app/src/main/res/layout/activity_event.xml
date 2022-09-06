@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eventActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:context=".EventActivity">
+
+        <android.widget.Button
+            android:id="@+id/participateButtonEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/participate_button_event_activity"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mapViewEventActivity"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/eventImageViewEventActivity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <ImageView
+            android:id="@+id/clockIconEventActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/descriptionTextViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextViewEventActivity"
+            app:srcCompat="@drawable/ic_time" />
+
+        <ImageView
+            android:id="@+id/locationIconEventActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/clockIconEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/clockIconEventActivity"
+            app:srcCompat="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/usernameTextViewEventActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/userImageViewEventActivity"
+            app:layout_constraintStart_toEndOf="@+id/userImageViewEventActivity"
+            app:layout_constraintTop_toTopOf="@+id/userImageViewEventActivity" />
+
+        <TextView
+            android:id="@+id/titleTextViewEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="12dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/eventImageViewEventActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eventImageViewEventActivity"
+            app:layout_constraintTop_toTopOf="@+id/eventImageViewEventActivity" />
+
+        <TextView
+            android:id="@+id/descriptionTextViewEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/eventImageViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/eventImageViewEventActivity" />
+
+        <TextView
+            android:id="@+id/dateTimeTextViewEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/clockIconEventActivity"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionTextViewEventActivity"
+            app:layout_constraintStart_toEndOf="@+id/clockIconEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextViewEventActivity" />
+
+        <TextView
+            android:id="@+id/addressTextViewEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/dateTimeTextViewEventActivity"
+            app:layout_constraintStart_toEndOf="@+id/locationIconEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/dateTimeTextViewEventActivity" />
+
+        <TextView
+            android:id="@+id/participantTextViewEventActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/participant_textview_eventactivity"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/mapViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/mapViewEventActivity" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageViewEventActivity"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/profileimage_border"
+            app:layout_constraintBottom_toTopOf="@+id/titleTextViewEventActivity"
+            app:layout_constraintStart_toEndOf="@+id/eventImageViewEventActivity"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <fragment
+            android:id="@+id/mapViewEventActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/addressTextViewEventActivity"
+            app:layout_constraintStart_toStartOf="@+id/locationIconEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextViewEventActivity" />
+
+        <android.widget.Button
+            android:id="@+id/dontParticpateButtonEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/dont_participate_button_event_activity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mapViewEventActivity"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.widget.Button
+            android:id="@+id/deleteEventButtonEventActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/delete_event_button_event_activity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mapViewEventActivity"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintTop_toBottomOf="@+id/participantTextViewEventActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

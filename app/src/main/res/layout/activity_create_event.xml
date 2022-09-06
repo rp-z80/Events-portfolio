@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventActivity">
+
+    <EditText
+        android:id="@+id/eventTitleEditTextCreateEvent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/event_title_hint_edittext"
+        android:textColorHint="#78909C"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addressEditTextCreateEvent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/address_hint_edittext"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectTagSpinner"
+        app:layout_constraintStart_toStartOf="@+id/selectTagSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/selectTagSpinner" />
+
+    <EditText
+        android:id="@+id/descriptionMultilineTextCreateEvent"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/multiline_text"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description_event_hint_edittext"
+        android:inputType="textMultiLine"
+        android:paddingStart="6dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/eventTitleEditTextCreateEvent"
+        app:layout_constraintStart_toStartOf="@+id/eventTitleEditTextCreateEvent"
+        app:layout_constraintTop_toBottomOf="@+id/eventTitleEditTextCreateEvent" />
+
+    <android.widget.Button
+        android:id="@+id/createEventButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/create_event_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addressEditTextCreateEvent"
+        app:layout_constraintStart_toStartOf="@+id/addressEditTextCreateEvent" />
+
+    <Button
+        android:id="@+id/showCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:includeFontPadding="true"
+        android:padding="12dp"
+        android:text="@string/date_hint_edittext"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_calendar"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/addressEditTextCreateEvent"
+        app:layout_constraintTop_toBottomOf="@+id/addressEditTextCreateEvent" />
+
+    <Button
+        android:id="@+id/showTimePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:text="@string/time_hint_button"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_time"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/showCalendarButton"
+        app:layout_constraintStart_toEndOf="@+id/showCalendarButton"
+        app:layout_constraintTop_toBottomOf="@+id/addressEditTextCreateEvent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/eventImageViewCreateEvent"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/showCalendarButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/showCalendarButton"
+        app:layout_constraintTop_toBottomOf="@+id/showCalendarButton"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/selectPhotoCreateEventButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/select_photo_button"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_add_photo"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/eventImageViewCreateEvent"
+        app:layout_constraintEnd_toEndOf="@+id/eventImageViewCreateEvent"
+        app:layout_constraintStart_toStartOf="@+id/eventImageViewCreateEvent"
+        app:layout_constraintTop_toTopOf="@+id/eventImageViewCreateEvent" />
+
+    <TextView
+        android:id="@+id/selectPhotoTextViewCreateEvent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/selectphoto_textview_create_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventImageViewCreateEvent"
+        app:layout_constraintTop_toTopOf="@+id/eventImageViewCreateEvent" />
+
+
+    <ProgressBar
+        android:id="@+id/progressCircleCreateEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/createEventButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/selectTagSpinner"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionMultilineTextCreateEvent"
+        app:layout_constraintStart_toStartOf="@+id/descriptionMultilineTextCreateEvent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_tag"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionMultilineTextCreateEvent"
+        app:layout_constraintStart_toStartOf="@+id/descriptionMultilineTextCreateEvent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionMultilineTextCreateEvent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
