@@ -14,10 +14,12 @@ The main features are:
 - Profile customization
 
 Here some screenshots
-![screenshot1](https://user-images.githubusercontent.com/74657021/188671272-6e9944f5-8b8b-4dbb-8d21-5307a1a0c569.jpg)
-![screenshot2](https://user-images.githubusercontent.com/74657021/188671284-b8c9c010-9833-4460-ba66-a7b812c5edd1.jpg)
-![screenshot3](https://user-images.githubusercontent.com/74657021/188671310-c910ead5-d439-4a00-8cd0-994cefd0b91b.jpg)
-![screenshot4](https://user-images.githubusercontent.com/74657021/188671317-42bcdba6-b0f3-45b3-a9d6-734805526ee3.jpg)
-![screenshot5](https://user-images.githubusercontent.com/74657021/188671321-20e3c714-2996-4ffc-8818-d014b6f1b028.jpg)
-![screenshot6](https://user-images.githubusercontent.com/74657021/188671329-a63d63db-b087-4413-9c53-97e6885108b2.jpg)
-![screenshot7](https://user-images.githubusercontent.com/74657021/188671334-02e9fb31-85bd-4ffe-8edc-ff642f81622a.jpg)
+<div>
+  <img  src="https://user-images.githubusercontent.com/74657021/188671272-6e9944f5-8b8b-4dbb-8d21-5307a1a0c569.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188673641-6d45e10e-e45b-482a-adbe-9eb1358ab0aa.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188671310-c910ead5-d439-4a00-8cd0-994cefd0b91b.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188671317-42bcdba6-b0f3-45b3-a9d6-734805526ee3.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188671321-20e3c714-2996-4ffc-8818-d014b6f1b028.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188671329-a63d63db-b087-4413-9c53-97e6885108b2.jpg" width="200" height="400" />
+  <img  src="https://user-images.githubusercontent.com/74657021/188671334-02e9fb31-85bd-4ffe-8edc-ff642f81622a.jpg" width="200" height="400" />
+</div>
